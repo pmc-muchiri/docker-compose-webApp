@@ -1,6 +1,36 @@
 services:
   web:
-    image: pmcmuchiri/pmc-cv:v1.0.0
+    image: pmcmuchiri/pmc-cv:v1.0.1
     build: .
     ports:
       - "8080:80"
+    volumes:
+      - webdata:/usr/share/nginx/html
+    networks:
+      - frontend
+      - backend
+  db:
+    image: postgres:15.10
+    environment:
+      - POSTGRES_PASSWORD=pmc1234
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - backend
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+    networks:
+      - backend
+volumes:
+  webdata:
+  pgdata:
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
