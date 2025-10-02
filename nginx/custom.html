@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paul Muchiri - DevOps Student Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #6a0dad;
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      background-color: #530b86;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #6a0dad;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    footer {
+      background-color: #6a0dad;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #6a0dad;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #530b86;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Paul Muchiri</h1>
+    <p>DevOps Student @ Moringa</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! My name is <strong>Paul Muchiri</strong>. I am a DevOps student from 
+        <strong>Moringa School</strong>. I am passionate about automation, cloud technologies, 
+        and building efficient CI/CD pipelines.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Docker & Docker Compose</li>
+        <li>Linux & Shell Scripting</li>
+        <li>Continuous Integration / Continuous Deployment (CI/CD)</li>
+        <li>Cloud Platforms (AWS, GCP, Azure basics)</li>
+        <li>Monitoring & Logging Tools</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are some of my sample projects:</p>
+      <ul>
+        <li>Dark room gallery Web App with Nginx </li>
+        <li>Automated CI/CD Pipeline using GitHub Actions and jenkins pipeline</li>
+        <li>Docker Networks, Storage and compose</li>
+      </ul>
+      <button onclick="showMessage()">Click Me!</button>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:paul.muchiri@student.moringaschool.com">paul.muchiri@student.moringaschool.com</a></p>
+      <p>GitHub: <a href="https://github.com/paul-muchiri" target="_blank">github.com/paul-muchiri</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Paul Muchiri | DevOps Student Portfolio</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Hello! Thanks for checking out my portfolio :) ");
+    }
+  </script>
+</body>
+</html>

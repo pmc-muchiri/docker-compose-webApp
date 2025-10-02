@@ -1,0 +1,6 @@
+services:
+  web:
+    image: pmcmuchiri/pmc-cv:v1.0.0
+    build: .
+    ports:
+      - "8080:80"
